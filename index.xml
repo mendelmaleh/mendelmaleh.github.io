@@ -2,31 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Mendel Elmaleh</title>
-    <link>https://mendelmaleh.github.io/</link>
+    <link>https://mendelmaleh.gq/</link>
     <description>Recent content on Mendel Elmaleh</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
     <lastBuildDate>Wed, 10 Apr 2019 08:17:44 -0400</lastBuildDate>
     
-	<atom:link href="https://mendelmaleh.github.io/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://mendelmaleh.gq/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>New website!</title>
-      <link>https://mendelmaleh.github.io/posts/new-website/</link>
+      <link>https://mendelmaleh.gq/posts/new-website/</link>
       <pubDate>Wed, 10 Apr 2019 08:17:44 -0400</pubDate>
       
-      <guid>https://mendelmaleh.github.io/posts/new-website/</guid>
+      <guid>https://mendelmaleh.gq/posts/new-website/</guid>
       <description>This website was built with hugo using the hermit theme. It&amp;rsquo;s hosted on github pages.</description>
     </item>
     
     <item>
       <title>About me</title>
-      <link>https://mendelmaleh.github.io/about/</link>
+      <link>https://mendelmaleh.gq/about/</link>
       <pubDate>Wed, 10 Apr 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://mendelmaleh.github.io/about/</guid>
+      <guid>https://mendelmaleh.gq/about/</guid>
       <description>19 y.o. italian/american, developer.</description>
     </item>
     
