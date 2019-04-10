@@ -3,18 +3,36 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://mendelmaleh.github.io/posts/new-website/</loc>
+    <lastmod>2019-04-10T08:17:44-04:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://mendelmaleh.github.io/about/</loc>
     <lastmod>2019-04-10T00:00:00+00:00</lastmod>
   </url>
   
   <url>
+    <loc>https://mendelmaleh.github.io/tags/hugo/</loc>
+    <lastmod>2019-04-10T08:17:44-04:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://mendelmaleh.github.io/</loc>
-    <lastmod>2019-04-10T00:00:00+00:00</lastmod>
+    <lastmod>2019-04-10T08:17:44-04:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://mendelmaleh.github.io/posts/</loc>
+    <lastmod>2019-04-10T08:17:44-04:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://mendelmaleh.github.io/tags/</loc>
+    <lastmod>2019-04-10T08:17:44-04:00</lastmod>
     <priority>0</priority>
   </url>
   
