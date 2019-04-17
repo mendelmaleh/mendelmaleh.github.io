@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://mendelmaleh.gq/posts/how-to-run-python-service/</loc>
+    <lastmod>2019-04-17T12:46:54-04:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://mendelmaleh.gq/posts/new-website/</loc>
     <lastmod>2019-04-10T08:17:44-04:00</lastmod>
   </url>
@@ -19,14 +24,32 @@
   </url>
   
   <url>
+    <loc>https://mendelmaleh.gq/tags/linux/</loc>
+    <lastmod>2019-04-17T12:46:54-04:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://mendelmaleh.gq/</loc>
-    <lastmod>2019-04-10T08:17:44-04:00</lastmod>
+    <lastmod>2019-04-17T12:46:54-04:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://mendelmaleh.gq/posts/</loc>
-    <lastmod>2019-04-10T08:17:44-04:00</lastmod>
+    <lastmod>2019-04-17T12:46:54-04:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://mendelmaleh.gq/tags/python/</loc>
+    <lastmod>2019-04-17T12:46:54-04:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://mendelmaleh.gq/tags/systemd/</loc>
+    <lastmod>2019-04-17T12:46:54-04:00</lastmod>
     <priority>0</priority>
   </url>
   

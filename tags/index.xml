@@ -21,5 +21,32 @@
       <description></description>
     </item>
     
+    <item>
+      <title>Linux</title>
+      <link>https://mendelmaleh.gq/tags/linux/</link>
+      <pubDate>Wed, 17 Apr 2019 12:46:54 -0400</pubDate>
+      
+      <guid>https://mendelmaleh.gq/tags/linux/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Python</title>
+      <link>https://mendelmaleh.gq/tags/python/</link>
+      <pubDate>Wed, 17 Apr 2019 12:46:54 -0400</pubDate>
+      
+      <guid>https://mendelmaleh.gq/tags/python/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Systemd</title>
+      <link>https://mendelmaleh.gq/tags/systemd/</link>
+      <pubDate>Wed, 17 Apr 2019 12:46:54 -0400</pubDate>
+      
+      <guid>https://mendelmaleh.gq/tags/systemd/</guid>
+      <description></description>
+    </item>
+    
   </channel>
 </rss>
