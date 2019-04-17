@@ -18,9 +18,10 @@
       <pubDate>Wed, 17 Apr 2019 12:46:54 -0400</pubDate>
       
       <guid>https://mendelmaleh.gq/posts/how-to-run-python-service/</guid>
-      <description>This is how I run my Python bots. This example is valid for CentOS, and it&amp;rsquo;s probably very similar on any other distro. You probably will just need to update the paths. In this example I will use bot, but your welcome t
+      <description>This is how I run my Python bots. This example is valid for CentOS, and it&amp;rsquo;s probably very similar on any other distro. You probably will just need to update the paths.
 First, add a shebang with the path to python (or python3, whatever you use) to the top of the file:
-#!/usr/local/bin/python3 -u Then create a bot.service file in /etc/systemd/system:</description>
+#!/usr/local/bin/python3 -u Then create a bot.service file in /etc/systemd/system:
+[Unit] # change this to whatever you want Description = Telegram bot [Service] Type = simple # change user accordingly User = mendel Wants = network.</description>
     </item>
     
   </channel>

@@ -9,31 +9,34 @@
 	<meta name="msapplication-TileColor" content="#494f5c">
 
 <meta itemprop="name" content="How to run a Python service">
-<meta itemprop="description" content="This is how I run my Python bots. This example is valid for CentOS, and it&rsquo;s probably very similar on any other distro. You probably will just need to update the paths. In this example I will use bot, but your welcome t
+<meta itemprop="description" content="This is how I run my Python bots. This example is valid for CentOS, and it&rsquo;s probably very similar on any other distro. You probably will just need to update the paths.
 First, add a shebang with the path to python (or python3, whatever you use) to the top of the file:
-#!/usr/local/bin/python3 -u Then create a bot.service file in /etc/systemd/system:">
+#!/usr/local/bin/python3 -u Then create a bot.service file in /etc/systemd/system:
+[Unit] # change this to whatever you want Description = Telegram bot [Service] Type = simple # change user accordingly User = mendel Wants = network.">
 
 
 <meta itemprop="datePublished" content="2019-04-17T12:46:54-04:00" />
 <meta itemprop="dateModified" content="2019-04-17T12:46:54-04:00" />
-<meta itemprop="wordCount" content="216">
+<meta itemprop="wordCount" content="205">
 
 
 
 <meta itemprop="keywords" content="python,linux,systemd," />
 <meta property="og:title" content="How to run a Python service" />
-<meta property="og:description" content="This is how I run my Python bots. This example is valid for CentOS, and it&rsquo;s probably very similar on any other distro. You probably will just need to update the paths. In this example I will use bot, but your welcome t
+<meta property="og:description" content="This is how I run my Python bots. This example is valid for CentOS, and it&rsquo;s probably very similar on any other distro. You probably will just need to update the paths.
 First, add a shebang with the path to python (or python3, whatever you use) to the top of the file:
-#!/usr/local/bin/python3 -u Then create a bot.service file in /etc/systemd/system:" />
+#!/usr/local/bin/python3 -u Then create a bot.service file in /etc/systemd/system:
+[Unit] # change this to whatever you want Description = Telegram bot [Service] Type = simple # change user accordingly User = mendel Wants = network." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://mendelmaleh.gq/posts/how-to-run-python-service/" />
 <meta property="article:published_time" content="2019-04-17T12:46:54-04:00"/>
 <meta property="article:modified_time" content="2019-04-17T12:46:54-04:00"/>
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="How to run a Python service"/>
-<meta name="twitter:description" content="This is how I run my Python bots. This example is valid for CentOS, and it&rsquo;s probably very similar on any other distro. You probably will just need to update the paths. In this example I will use bot, but your welcome t
+<meta name="twitter:description" content="This is how I run my Python bots. This example is valid for CentOS, and it&rsquo;s probably very similar on any other distro. You probably will just need to update the paths.
 First, add a shebang with the path to python (or python3, whatever you use) to the top of the file:
-#!/usr/local/bin/python3 -u Then create a bot.service file in /etc/systemd/system:"/>
+#!/usr/local/bin/python3 -u Then create a bot.service file in /etc/systemd/system:
+[Unit] # change this to whatever you want Description = Telegram bot [Service] Type = simple # change user accordingly User = mendel Wants = network."/>
 
 	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -80,7 +83,7 @@ First, add a shebang with the path to python (or python3, whatever you use) to t
 				<h1>How to run a Python service</h1>
 			</header>
 			<div class="content">
-				<p><em>This is how I run my Python bots. This example is valid for CentOS, and it&rsquo;s probably very similar on any other distro. You probably will just need to update the paths. In this example I will use bot, but your welcome t</em></p>
+				<p><em>This is how I run my Python bots. This example is valid for CentOS, and it&rsquo;s probably very similar on any other distro. You probably will just need to update the paths.</em></p>
 
 <p>First, add a shebang with the path to python (or python3, whatever you use) to the top of the file:</p>
 <div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1">#!/usr/local/bin/python3 -u</span></code></pre></div>
@@ -121,7 +124,7 @@ First, add a shebang with the path to python (or python3, whatever you use) to t
 				<p>
 					<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag meta-icon"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7" y2="7"></line></svg><span class="tag"><a href="https://mendelmaleh.gq/tags/python">python</a></span><span class="tag"><a href="https://mendelmaleh.gq/tags/linux">linux</a></span><span class="tag"><a href="https://mendelmaleh.gq/tags/systemd">systemd</a></span>
 				</p>
-				<p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>216 Words</p>
+				<p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>205 Words</p>
 				<p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>2019-04-17 12:46 -0400</p>
 			</footer>
 		</article>
