@@ -8,28 +8,6 @@
   </url>
   
   <url>
-    <loc>https://mendelmaleh.gq/posts/new-website/</loc>
-    <lastmod>2019-04-10T08:17:44-04:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://mendelmaleh.gq/about/</loc>
-    <lastmod>2019-04-10T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://mendelmaleh.gq/tags/hugo/</loc>
-    <lastmod>2019-04-10T08:17:44-04:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://mendelmaleh.gq/tags/linux/</loc>
-    <lastmod>2019-04-17T12:46:54-04:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://mendelmaleh.gq/</loc>
     <lastmod>2019-04-17T12:46:54-04:00</lastmod>
     <priority>0</priority>
@@ -37,6 +15,18 @@
   
   <url>
     <loc>https://mendelmaleh.gq/posts/</loc>
+    <lastmod>2019-04-17T12:46:54-04:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://mendelmaleh.gq/tags/</loc>
+    <lastmod>2019-04-17T12:46:54-04:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://mendelmaleh.gq/tags/linux/</loc>
     <lastmod>2019-04-17T12:46:54-04:00</lastmod>
     <priority>0</priority>
   </url>
@@ -54,8 +44,23 @@
   </url>
   
   <url>
-    <loc>https://mendelmaleh.gq/tags/</loc>
+    <loc>https://mendelmaleh.gq/posts/new-website/</loc>
     <lastmod>2019-04-10T08:17:44-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://mendelmaleh.gq/tags/hugo/</loc>
+    <lastmod>2019-04-10T08:17:44-04:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://mendelmaleh.gq/about/</loc>
+    <lastmod>2019-04-10T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://mendelmaleh.gq/categories/</loc>
     <priority>0</priority>
   </url>
   

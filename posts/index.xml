@@ -1,72 +1,37 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-	<channel>
-		<title>Posts on Mendel Elmaleh</title>
-		<link>https://mendelmaleh.gq/posts/</link>
-		<description>Recent content in Posts on Mendel Elmaleh</description>
-		<generator>Hugo -- gohugo.io</generator>
-		<language>en-us</language>
-		<copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
-		<lastBuildDate>Wed, 17 Apr 2019 12:46:54 -0400</lastBuildDate>
-		<atom:link href="https://mendelmaleh.gq/posts/index.xml" rel="self" type="application/rss+xml" />
-		
-		<item>
-			<title>How to run a Python service</title>
-			<link>https://mendelmaleh.gq/posts/how-to-run-python-service/</link>
-			<pubDate>Wed, 17 Apr 2019 12:46:54 -0400</pubDate>
-			
-			<guid>https://mendelmaleh.gq/posts/how-to-run-python-service/</guid>
-			<description>This is how I run my Python bots. This example is valid for CentOS, and it&amp;rsquo;s probably very similar on any other distro. You probably will just need to update the paths.
+  <channel>
+    <title>Posts on Mendel Elmaleh</title>
+    <link>https://mendelmaleh.gq/posts/</link>
+    <description>Recent content in Posts on Mendel Elmaleh</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
+    <lastBuildDate>Wed, 17 Apr 2019 12:46:54 -0400</lastBuildDate>
+    
+	<atom:link href="https://mendelmaleh.gq/posts/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>How to run a Python service</title>
+      <link>https://mendelmaleh.gq/posts/how-to-run-python-service/</link>
+      <pubDate>Wed, 17 Apr 2019 12:46:54 -0400</pubDate>
+      
+      <guid>https://mendelmaleh.gq/posts/how-to-run-python-service/</guid>
+      <description>This is how I run my Python bots. This example is valid for CentOS, and it&amp;rsquo;s probably very similar on any other distro. You probably will just need to update the paths.
 First, add a shebang with the path to python (or python3, whatever you use) to the top of the file:
 #!/usr/local/bin/python3 -u Then create a bot.service file in /etc/systemd/system:
 [Unit] # change this to whatever you want Description = Telegram bot [Service] Type = simple # change user accordingly User = mendel Wants = network.</description>
-			<content type="html"><![CDATA[<p><em>This is how I run my Python bots. This example is valid for CentOS, and it&rsquo;s probably very similar on any other distro. You probably will just need to update the paths.</em></p>
-
-<p>First, add a <code>shebang</code> with the path to <code>python</code> (or <code>python3</code>, whatever you use) to the top of the file:</p>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1">#!/usr/local/bin/python3 -u</span></code></pre></div>
-<p>Then create a <code>bot.service</code> file in <code>/etc/systemd/system</code>:</p>
-<div class="highlight"><pre class="chroma"><code class="language-ini" data-lang="ini"><span class="k">[Unit]</span>
-<span class="c1"># change this to whatever you want</span>
-<span class="na">Description</span> <span class="o">=</span> <span class="s">Telegram bot</span>
-
-<span class="k">[Service]</span>
-<span class="na">Type</span> <span class="o">=</span> <span class="s">simple</span>
-<span class="c1"># change user accordingly</span>
-<span class="na">User</span> <span class="o">=</span> <span class="s">mendel</span>
-<span class="na">Wants</span> <span class="o">=</span> <span class="s">network.target</span>
-<span class="na">After</span> <span class="o">=</span> <span class="s">network.target syslog.target</span>
-
-<span class="na">Restart</span> <span class="o">=</span> <span class="s">on-failure</span>
-<span class="na">RestartSec</span> <span class="o">=</span> <span class="s">10</span>
-<span class="na">startLimitIntervalSec</span> <span class="o">=</span> <span class="s">60</span>
-
-<span class="c1"># path to python file dir</span>
-<span class="na">WorkingDirectory</span> <span class="o">=</span> <span class="s">/home/mendel/python/bot</span>
-<span class="c1"># path to python file</span>
-<span class="na">ExecStart</span> <span class="o">=</span> <span class="s">/home/mendel/python/bot/main.py</span>
-<span class="na">StandardOutput</span> <span class="o">=</span> <span class="s">syslog</span>
-<span class="na">StandardError</span> <span class="o">=</span> <span class="s">syslog</span>
-
-<span class="k">[Install]</span>
-<span class="na">WantedBy</span> <span class="o">=</span> <span class="s">multi-user.target</span></code></pre></div>
-<p>Now, to test run <code>sudo systemctl start bot</code>, and you can check status (and any output you print) by doing <code>sudo systemctl -l status bot</code>. <code>-l</code> is not required. You can stop it with <code>sudo systemctl stop bot</code>.</p>
-
-<p><strong><code>bot</code> is merely the name of the <code>.service</code> file, you can change that as you wish.</strong></p>
-
-<p>If everything was good, you can <code>sudo systemctl enable bot</code> to make it start automatically on boot. Obviously there is also a <code>disable</code> command.</p>
-]]></content>
-		</item>
-		
-		<item>
-			<title>New website!</title>
-			<link>https://mendelmaleh.gq/posts/new-website/</link>
-			<pubDate>Wed, 10 Apr 2019 08:17:44 -0400</pubDate>
-			
-			<guid>https://mendelmaleh.gq/posts/new-website/</guid>
-			<description>This website was built with hugo using the hermit theme. It&amp;rsquo;s hosted on github pages.</description>
-			<content type="html"><![CDATA[<p>This website was built with <a href="https://gohugo.io/">hugo</a> using the <a href="https://github.com/Track3/hermit">hermit</a> theme. It&rsquo;s hosted on <a href="https://pages.github.com/">github pages</a>.</p>
-]]></content>
-		</item>
-		
-	</channel>
+    </item>
+    
+    <item>
+      <title>New website!</title>
+      <link>https://mendelmaleh.gq/posts/new-website/</link>
+      <pubDate>Wed, 10 Apr 2019 08:17:44 -0400</pubDate>
+      
+      <guid>https://mendelmaleh.gq/posts/new-website/</guid>
+      <description>This website was built with hugo using the hermit theme. It&amp;rsquo;s hosted on github pages.</description>
+    </item>
+    
+  </channel>
 </rss>

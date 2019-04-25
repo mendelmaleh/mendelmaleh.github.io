@@ -1,89 +1,26 @@
 <!DOCTYPE html>
-<html lang="en-us">
+<html><head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+   
+  <link type="text/css" rel="stylesheet" href="https://mendelmaleh.gqcss/normalize.css">
+  
+  
+  <link type="text/css" rel="stylesheet" href="https://mendelmaleh.gq/sass/simple.css">
 
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<meta name="theme-color" content="#494f5c">
-	<meta name="msapplication-TileColor" content="#494f5c">
+  
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/brands.css" integrity="sha384-n9+6/aSqa9lBidZMRCQHTHKJscPq6NW4pCQBiMmHdUCvPN8ZOg2zJJTkC7WIezWv" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/fontawesome.css" integrity="sha384-vd1e11sR28tEK9YANUtpIOdjGW14pS87bUBuOIoBILVWLFnS+MCX9T6MMf0VdPGq" crossorigin="anonymous">
 
-<meta itemprop="name" content="How to run a Python service">
-<meta itemprop="description" content="This is how I run my Python bots. This example is valid for CentOS, and it&rsquo;s probably very similar on any other distro. You probably will just need to update the paths.
-First, add a shebang with the path to python (or python3, whatever you use) to the top of the file:
-#!/usr/local/bin/python3 -u Then create a bot.service file in /etc/systemd/system:
-[Unit] # change this to whatever you want Description = Telegram bot [Service] Type = simple # change user accordingly User = mendel Wants = network.">
-
-
-<meta itemprop="datePublished" content="2019-04-17T12:46:54-04:00" />
-<meta itemprop="dateModified" content="2019-04-17T12:46:54-04:00" />
-<meta itemprop="wordCount" content="205">
-
-
-
-<meta itemprop="keywords" content="python,linux,systemd," />
-<meta property="og:title" content="How to run a Python service" />
-<meta property="og:description" content="This is how I run my Python bots. This example is valid for CentOS, and it&rsquo;s probably very similar on any other distro. You probably will just need to update the paths.
-First, add a shebang with the path to python (or python3, whatever you use) to the top of the file:
-#!/usr/local/bin/python3 -u Then create a bot.service file in /etc/systemd/system:
-[Unit] # change this to whatever you want Description = Telegram bot [Service] Type = simple # change user accordingly User = mendel Wants = network." />
-<meta property="og:type" content="article" />
-<meta property="og:url" content="https://mendelmaleh.gq/posts/how-to-run-python-service/" />
-<meta property="article:published_time" content="2019-04-17T12:46:54-04:00"/>
-<meta property="article:modified_time" content="2019-04-17T12:46:54-04:00"/>
-<meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="How to run a Python service"/>
-<meta name="twitter:description" content="This is how I run my Python bots. This example is valid for CentOS, and it&rsquo;s probably very similar on any other distro. You probably will just need to update the paths.
-First, add a shebang with the path to python (or python3, whatever you use) to the top of the file:
-#!/usr/local/bin/python3 -u Then create a bot.service file in /etc/systemd/system:
-[Unit] # change this to whatever you want Description = Telegram bot [Service] Type = simple # change user accordingly User = mendel Wants = network."/>
-
-	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-	<link rel="manifest" href="/site.webmanifest">
-	<link rel="mask-icon" href="/safari-pinned-tab.svg" color="">
-	<link rel="shortcut icon" href="/favicon.ico">
-
-	<title>How to run a Python service</title>
-	<link rel="stylesheet" href="https://mendelmaleh.gq/css/style.min.31706917653d2b9e8410abd431f30ec4359a88a94fc87a63654779d87329edec.css" integrity="sha256-MXBpF2U9K56EEKvUMfMOxDWaiKlPyHpjZUd52HMp7ew=">
-	
+  
+  <meta name="theme-color" content="#242933">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 </head>
-
-<body id="page">
-	
-	<header id="site-header" class="animated slideInUp faster">
-		<div class="hdr-wrapper section-inner">
-			<div class="hdr-left">
-				<div class="site-branding">
-					<a href="https://mendelmaleh.gq">Mendel Elmaleh</a>
-				</div>
-				<nav class="site-nav hide-in-mobile">
-					<a href="https://mendelmaleh.gq/posts/">Posts</a>
-					<a href="https://mendelmaleh.gq/about/">About</a>
-				</nav>
-			</div>
-			<div class="hdr-right hdr-icons">
-				<span class="hdr-social hide-in-mobile"><a href="https://github.com/mendelmaleh" target="_blank" rel="noopener" title="Github"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-github"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg></a><a href="https://t.me/rastamanjohn" target="_blank" rel="noopener" title="Telegram"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" aria-hidden="true" class="feather"><path d="m 22.05,1.577 c -0.393,-0.016 -0.784,0.08 -1.117,0.235 -0.484,0.186 -4.92,1.902 -9.41,3.64 C 9.263,6.325 7.005,7.198 5.267,7.867 3.53,8.537 2.222,9.035 2.153,9.059 c -0.46,0.16 -1.082,0.362 -1.61,0.984 -0.79581202,1.058365 0.21077405,1.964825 1.004,2.499 1.76,0.564 3.58,1.102 5.087,1.608 0.556,1.96 1.09,3.927 1.618,5.89 0.174,0.394 0.553,0.54 0.944,0.544 l -0.002,0.02 c 0,0 0.307,0.03 0.606,-0.042 0.3,-0.07 0.677,-0.244 1.02,-0.565 0.377,-0.354 1.4,-1.36 1.98,-1.928 l 4.37,3.226 0.035,0.02 c 0,0 0.484,0.34 1.192,0.388 0.354,0.024 0.82,-0.044 1.22,-0.337 0.403,-0.294 0.67,-0.767 0.795,-1.307 0.374,-1.63 2.853,-13.427 3.276,-15.38 L 23.676,4.725 C 23.972,3.625 23.863,2.617 23.18,2.02 22.838,1.723 22.444,1.593 22.05,1.576 Z"></path></svg></a></span><button id="menu-btn" class="hdr-btn" title="Menu"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg></button>
-			</div>
-		</div>
-	</header>
-	<div id="mobile-menu" class="animated fast">
-		<ul>
-			<li><a href="https://mendelmaleh.gq/posts/">Posts</a></li>
-			<li><a href="https://mendelmaleh.gq/about/">About</a></li>
-		</ul>
-	</div>
-
-
-	<main class="site-main section-inner animated fadeIn faster">
-		<article class="thin">
-			<header class="post-header">
-				<div class="post-meta"><span>Apr 17, 2019</span></div>
-				<h1>How to run a Python service</h1>
-			</header>
-			<div class="content">
-				<p><em>This is how I run my Python bots. This example is valid for CentOS, and it&rsquo;s probably very similar on any other distro. You probably will just need to update the paths.</em></p>
+<body><div class="container">
+<h1 class="post-title">How to run a Python service</h1>
+<time datetime="2019-04-17T12:46:54-0400">Apr 17, 2019</time>
+<p><em>This is how I run my Python bots. This example is valid for CentOS, and it&rsquo;s probably very similar on any other distro. You probably will just need to update the paths.</em></p>
 
 <p>First, add a <code>shebang</code> with the path to <code>python</code> (or <code>python3</code>, whatever you use) to the top of the file:</p>
 <div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1">#!/usr/local/bin/python3 -u</span></code></pre></div>
@@ -118,33 +55,17 @@ First, add a shebang with the path to python (or python3, whatever you use) to t
 
 <p>If everything was good, you can <code>sudo systemctl enable bot</code> to make it start automatically on boot. Obviously there is also a <code>disable</code> command.</p>
 
-			</div>
-			<hr class="post-end">
-			<footer class="post-info">
-				<p>
-					<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag meta-icon"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7" y2="7"></line></svg><span class="tag"><a href="https://mendelmaleh.gq/tags/python">python</a></span><span class="tag"><a href="https://mendelmaleh.gq/tags/linux">linux</a></span><span class="tag"><a href="https://mendelmaleh.gq/tags/systemd">systemd</a></span>
-				</p>
-				<p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>205 Words</p>
-				<p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>2019-04-17 12:46 -0400</p>
-			</footer>
-		</article>
-		<div class="post-nav thin">
-			<a class="prev-post" href="https://mendelmaleh.gq/posts/new-website/">
-				<span class="post-nav-label">Older&nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></span><br><span>New website!</span>
-			</a>
-		</div>
-		<div id="comments" class="thin">
-</div>
-	</main>
+<hr class="post-end">
 
-	<footer id="site-footer" class="section-inner thin animated fadeIn faster">
-		<p>&copy; 2019 <a href="https://mendelmaleh.gq">Mendel Elmaleh</a> &#183; <a href="https://mendelmaleh.gq/posts/index.xml" target="_blank" title="rss"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-rss"><path d="M4 11a9 9 0 0 1 9 9"></path><path d="M4 4a16 16 0 0 1 16 16"></path><circle cx="5" cy="19" r="1"></circle></svg></a>
-		</p>
-	</footer>
+<p>
+  
+  <a class="tag" href="https://mendelmaleh.gq/tags/python">python</a>
+  
+  <a class="tag" href="https://mendelmaleh.gq/tags/linux">linux</a>
+  
+  <a class="tag" href="https://mendelmaleh.gq/tags/systemd">systemd</a>
+  
 
 
-	<script src="https://mendelmaleh.gq/js/main.min.784417f5847151f848c339cf0acb13a06cbb648b1483435a28ed4556c4ead69b.js" integrity="sha256-eEQX9YRxUfhIwznPCssToGy7ZIsUg0NaKO1FVsTq1ps="></script>
-
-</body>
-
+        </div></body>
 </html>
