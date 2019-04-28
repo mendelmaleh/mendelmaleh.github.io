@@ -89,10 +89,9 @@
   padding: 0 .5em .1em;
   margin-bottom: .2em;
   border-radius: 4px;
-  transition-duration: 0.4s;
+  transition: color 0.4s, background-color 0.4s;
   color: inherit;
-  -webkit-tap-highlight-color: transparent;
-  -webkit-transition-duration: 0.4s; }
+  -webkit-tap-highlight-color: transparent; }
   .home-item:hover, .home-item:active {
     color: #2E3440;
     background-color: #81A1C1;
