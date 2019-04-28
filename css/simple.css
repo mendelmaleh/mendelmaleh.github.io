@@ -27,6 +27,7 @@
   border-radius: 4px;
   -webkit-tap-highlight-color: transparent; }
   .post-item:hover, .post-item:active {
+    transition: color 0.4s, background-color 0.4s;
     background-color: #81A1C1;
     color: #2E3440;
     text-decoration: none; }
@@ -89,10 +90,10 @@
   padding: 0 .5em .1em;
   margin-bottom: .2em;
   border-radius: 4px;
-  transition: color 0.4s, background-color 0.4s;
   color: inherit;
   -webkit-tap-highlight-color: transparent; }
   .home-item:hover, .home-item:active {
+    transition: color 0.4s, background-color 0.4s;
     color: #2E3440;
     background-color: #81A1C1;
     text-decoration: inherit; }
