@@ -17,32 +17,38 @@
 <p><em>This is how I run my Python bots. This example is valid for CentOS, and it&rsquo;s probably very similar on any other distro. You probably will just need to update the paths.</em></p>
 
 <p>First, add a <code>shebang</code> with the path to <code>python</code> (or <code>python3</code>, whatever you use) to the top of the file:</p>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1">#!/usr/local/bin/python3 -u</span></code></pre></div>
+
+<pre><code class="language-bash">#!/usr/local/bin/python3 -u
+</code></pre>
+
 <p>Then create a <code>bot.service</code> file in <code>/etc/systemd/system</code>:</p>
-<div class="highlight"><pre class="chroma"><code class="language-ini" data-lang="ini"><span class="k">[Unit]</span>
-<span class="c1"># change this to whatever you want</span>
-<span class="na">Description</span> <span class="o">=</span> <span class="s">Telegram bot</span>
 
-<span class="k">[Service]</span>
-<span class="na">Type</span> <span class="o">=</span> <span class="s">simple</span>
-<span class="c1"># change user accordingly</span>
-<span class="na">User</span> <span class="o">=</span> <span class="s">mendel</span>
-<span class="na">Wants</span> <span class="o">=</span> <span class="s">network.target</span>
-<span class="na">After</span> <span class="o">=</span> <span class="s">network.target syslog.target</span>
+<pre><code class="language-ini">[Unit]
+# change this to whatever you want
+Description = Telegram bot
 
-<span class="na">Restart</span> <span class="o">=</span> <span class="s">on-failure</span>
-<span class="na">RestartSec</span> <span class="o">=</span> <span class="s">10</span>
-<span class="na">startLimitIntervalSec</span> <span class="o">=</span> <span class="s">60</span>
+[Service]
+Type = simple
+# change user accordingly
+User = mendel
+Wants = network.target
+After = network.target syslog.target
 
-<span class="c1"># path to python file dir</span>
-<span class="na">WorkingDirectory</span> <span class="o">=</span> <span class="s">/home/mendel/python/bot</span>
-<span class="c1"># path to python file</span>
-<span class="na">ExecStart</span> <span class="o">=</span> <span class="s">/home/mendel/python/bot/main.py</span>
-<span class="na">StandardOutput</span> <span class="o">=</span> <span class="s">syslog</span>
-<span class="na">StandardError</span> <span class="o">=</span> <span class="s">syslog</span>
+Restart = on-failure
+RestartSec = 10
+startLimitIntervalSec = 60
 
-<span class="k">[Install]</span>
-<span class="na">WantedBy</span> <span class="o">=</span> <span class="s">multi-user.target</span></code></pre></div>
+# path to python file dir
+WorkingDirectory = /home/mendel/python/bot
+# path to python file
+ExecStart = /home/mendel/python/bot/main.py
+StandardOutput = syslog
+StandardError = syslog
+
+[Install]
+WantedBy = multi-user.target
+</code></pre>
+
 <p>Now, to test run <code>sudo systemctl start bot</code>, and you can check status (and any output you print) by doing <code>sudo systemctl -l status bot</code>. <code>-l</code> is not required. You can stop it with <code>sudo systemctl stop bot</code>.</p>
 
 <p><strong><code>bot</code> is merely the name of the <code>.service</code> file, you can change that as you wish.</strong></p>
