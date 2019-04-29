@@ -8,10 +8,10 @@
 .post-list {
   flex-grow: 1;
   padding: 0;
-  line-height: 2;
-  list-style: none;
   margin: 0;
-    margin-bottom: 1em; }
+    margin-bottom: 1em;
+  line-height: 2;
+  list-style: none; }
 
 @media (max-width: 760px) {
   .post-list {
@@ -27,10 +27,10 @@
   border-radius: 4px;
   -webkit-tap-highlight-color: transparent; }
   .post-item:hover, .post-item:active {
-    transition-property: color, background-color;
-    transition-duration: 0.4s;
     background-color: #81A1C1;
     color: #2E3440;
+    transition-duration: 0.4s;
+    transition-property: color, background-color;
     text-decoration: none; }
 
 .post-year {
@@ -44,24 +44,24 @@
     padding-top: .1em;
   margin: 0 .1em;
   border-radius: 3px;
-  transition-duration: 0.4s;
   text-decoration: none;
-  -webkit-tap-highlight-color: transparent;
-  -webkit-transition-duration: 0.4s; }
+  -webkit-tap-highlight-color: transparent; }
   .tag:hover, .tag:active {
     background-color: #81A1C1;
     color: #2E3440;
+    transition-duration: 0.4s;
+    transition-property: color, background-color;
     text-decoration: inherit; }
   .tag:before {
     content: "#"; }
 
 .home-main {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
   align-items: center;
-  height: 90vh;
-  font-size: 1.4em; }
+  justify-content: center;
+  flex-direction: column;
+  font-size: 1.4em;
+  height: 90vh; }
 
 .home-title, .home-subtitle, .home-menu {
   margin: 0;
@@ -75,29 +75,29 @@
   margin-bottom: 1.7em;
   -webkit-tap-highlight-color: transparent; }
   .home-social i {
-    vertical-align: top;
     font-size: 1.7em;
-    color: #D8DEE9; }
+    color: #D8DEE9;
+    vertical-align: top; }
     .home-social i:hover, .home-social i:active {
-      transition: transform .2s;
+      color: #81A1C1;
       transform: scale(1.3);
-      color: #81A1C1; }
+      transition: transform .2s; }
   .home-social a {
     margin: 0 .2em; }
     .home-social a:hover, .home-social a:active, .home-social a:focus {
       text-decoration: none; }
 
 .home-item {
+  color: inherit;
   padding: 0 .5em .1em;
   margin-bottom: .2em;
   border-radius: 4px;
-  color: inherit;
   -webkit-tap-highlight-color: transparent; }
   .home-item:hover, .home-item:active {
-    transition-property: color, background-color;
-    transition-duration: 0.4s;
-    color: #2E3440;
     background-color: #81A1C1;
+    color: #2E3440;
+    transition-duration: 0.4s;
+    transition-property: color, background-color;
     text-decoration: inherit; }
 
 html {
